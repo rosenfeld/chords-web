@@ -1,0 +1,22 @@
+<div>
+  <label><input type=checkbox id=inplace-edit />In-place edit</label>
+  <label><input type=checkbox id=show-real-chords checked />Show real chords</label>
+  <label><input type=checkbox id=show-normalized-chords />Show normalized chords</label>
+  <label><input type=checkbox id=show-lyrics checked />Show lyrics</label>
+</div>
+<textarea id=song-content rows=50 cols=100 style="float: right; display: none"><%= @content %></textarea>
+<div id=song></div>
+<div id="transposition" style="display: none">Transpose to: <select>
+  <option value="" selected>-</option>
+  <option>A</option>
+  <option>Bb</option>
+  <option>B</option>
+  <option>C</option>
+  <option>C#</option>
+  <option>D</option>
+  <option>Eb</option>
+  <option>F</option>
+  <option>F#</option>
+  <option>G</option>
+  <option>Ab</option>
+</select></div>

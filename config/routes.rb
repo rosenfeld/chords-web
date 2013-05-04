@@ -1,4 +1,7 @@
 ChordsWeb::Application.routes.draw do
+  root 'main#index'
+  get 'show' => 'main#show'
+  post 'fetch' => 'main#fetch'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

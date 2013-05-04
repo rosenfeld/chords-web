@@ -12,5 +12,9 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
-//= require_tree .
+//= require jquery.ui.all
+//= require_tree ./chords-web
+//= require ./chords-processor/formatters/html_formatter
+//= require ./chords-processor/transposer/transposer
+//= require ./chords-processor/parsers/chord_parser
+//= require ./chords-processor/transposer/source_transposer
