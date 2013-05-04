@@ -23,7 +23,7 @@ class MainController < ApplicationController
   def fetch_index(path)
     base = path.sub(/(.*\/).*\z/, '\\1')
     JSON.parse(read_url path).map do |entry|
-      entry['path'] = "#{base}#{entry['path']}"
+      entry['path'] = "#{base}#{entry['path']}" unless entry['path'] =~ /\Ahttps?\:\/\//
       entry
     end
   end
