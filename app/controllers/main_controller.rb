@@ -3,7 +3,7 @@ require 'json'
 
 class MainController < ApplicationController
   def index
-    @index_path = params[:index_path] || 'http://harmonias/.index.json'
+    @index_path = params[:index_path] || 'https://raw.github.com/rosenfeld/harmonias/master/.index.json'
   end
 
   def show
