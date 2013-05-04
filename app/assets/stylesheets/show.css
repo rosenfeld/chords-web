@@ -18,4 +18,5 @@
 @media print {
   #song table.chords tr.chords,
   #song .title, #song .author, #song .artist, #song .tone { color: black; }
+  #header {display: none; }
 }
