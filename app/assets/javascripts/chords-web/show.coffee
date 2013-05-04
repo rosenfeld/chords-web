@@ -7,7 +7,7 @@ $ ->
 onContentChange = ->
   $('#song').html(processSong($(this).val()))
   tone = $('#transposition select').val()
-  $('#song .tone').text(tone) if tone
+  $('#song .tone').text(tone) if tone # FIXME: preserve minor, etc, when changing the tone
   $('#song tr.chords').toggle($('#show-real-chords')[0].checked)
   $('#song tr.normalized-chords').toggle($('#show-normalized-chords')[0].checked)
   $('#song tr.lyrics').toggle($('#show-lyrics')[0].checked)
